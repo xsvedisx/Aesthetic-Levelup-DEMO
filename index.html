@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aesthetic LevelUp</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Liter&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="hero">
+      <header>
+        <nav class="navbar">
+          <div class="navbar-brand-big">
+            <img
+              src="images/ael.png"
+              style="filter: grayscale(100%) brightness(500%)"
+            />
+          </div>
+          <div class="navbar-brand-small">
+            <img
+              src="images/aelsmall2.png"
+              style="filter: grayscale(100%) brightness(500%)"
+            />
+          </div>
+          <div class="navbar-nav">
+            <a class="navButton" href="index.html">HOME</a>
+            <a class="navButton" href="#portfolio">TRACK</a>
+            <a class="navButton" href="#contact">TOOLS</a>
+          </div>
+          <!-- Hamburger Menu -->
+          <div class="hamburger-menu" onclick="toggleMenu()">
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+            <div class="hamburger-icon"></div>
+          </div>
+        </nav>
+        <!-- Sliding Menu -->
+        <div class="side-menu">
+          <a href="#about" class="side-menu-item">HOME</a>
+          <a href="#TRACK" class="side-menu-item">TRACK</a>
+          <a href="#contact" class="side-menu-item">TOOLS</a>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <section class="section" id="home">
+        <h1 style="text-align: center">
+          Time to level up? You came to the right place!
+        </h1>
+        <div class="welcome">
+          <div class="welcome-cards track">
+            <img src="icons/track.png" height="40px" />
+            <h3>TRACK YOUR PROGRESS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex
+              quisquam neque reprehenderit, repellendus quia itaque non autem.
+            </p>
+          </div>
+          <div class="welcome-cards tools">
+            <img src="icons/calculate.png" height="40px" />
+            <h3>USE SMART TOOLS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex
+              quisquam neque reprehenderit, repellendus quia itaque non autem.
+            </p>
+          </div>
+          <div class="welcome-cards goal">
+            <img src="icons/track_target.png" height="40px" />
+            <h3>REACH YOUR GOALS</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ex
+              quisquam neque reprehenderit, repellendus quia itaque non autem.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="darkContainer">
+        <h1>Track your progress!</h1>
+        <section class="progress-section">
+          <div class="workout-card">
+            <canvas id="myChart"></canvas>
+          </div>
+          <div class="workout-card">
+            <canvas id="myChart2"></canvas>
+          </div>
+          <div class="workout-card">
+            <canvas id="myChart3"></canvas>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Aesthetic LevelUp. All rights reserved.</p>
+    </footer>
+    <script src="js/benchpress.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>
