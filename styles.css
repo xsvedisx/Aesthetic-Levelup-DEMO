@@ -312,7 +312,7 @@ header.scrolled {
 }
 
 .otherButton:hover {
-  background-color: rgb(194, 194, 194);
+  color: #4b4b4b !important;
 }
 
 /* Hamburger Icon */
