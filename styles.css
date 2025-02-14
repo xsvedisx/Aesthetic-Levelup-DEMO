@@ -419,7 +419,7 @@ header.scrolled {
   }
   .hero {
     background-size: 768px;
-    height: 300px;
+    height: 340px;
   }
   .progress-section {
     flex-direction: column;
@@ -449,6 +449,6 @@ header.scrolled {
 
 @media (max-width: 360px) {
   .hero {
-    height: 160px;
+    height: 200px;
   }
 }
